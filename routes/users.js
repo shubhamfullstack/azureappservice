@@ -1,9 +1,7 @@
 var express = require('express');
+const { getUserDetails } = require('../services/users.service');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource with shubham');
-});
+router.get('/', getUserDetails);
 
 module.exports = router;
