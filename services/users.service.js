@@ -21,7 +21,6 @@ function getData(connection,req,res){
 
     connection.execSql(request);
 }
-
 function getUserDetails(req,res){
     const connection = new Connection(config);
     connection.connect((err) => {
