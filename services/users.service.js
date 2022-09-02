@@ -26,8 +26,7 @@ function getUserDetails(req,res){
     const connection = new Connection(config);
     connection.connect((err) => {
         if (err) {
-          res.send('connection err');
-          throw err;
+          res.send(err);
         }
       
         getData(connection,req,res);
